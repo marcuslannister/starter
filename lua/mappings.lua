@@ -18,12 +18,12 @@ map('n', '<leader>so', ':so %<CR>', { desc = "Runs Ex-commands" })
 -- map('i', '<leader>bs', '<C-c>:w<CR>')
 
 -- Close all windows and exit from Neovim with <leader> and qq
-map('n', '<leader>qa', ':qa!<CR>')
-map('n', '<leader>qq', ':q<CR>')
+map('n', '<leader>qa', ':qa!<CR>', { desc = "Quit all buffers without save" })
+map('n', '<leader>qq', ':q<CR>', { desc = "Quit all buffers" })
 
 -- Manage window
-map('n', '<leader>wq', '<C-w><C-q>', { desc = "quit current window" })
-map('n', '<leader>wo', '<C-w><C-o>')
-map('n', '<leader>wv', '<C-w><C-v>')
-map('n', '<leader>ww', '<C-w><C-w>')
+map('n', '<leader>wq', '<C-w><C-q>', { desc = "Quit a window" })
+map('n', '<leader>wo', '<C-w><C-o>', { desc = "Close all other windows" })
+map('n', '<leader>wv', '<C-w><C-v>', { desc = "Split window vertically" })
+map('n', '<leader>ww', '<C-w><C-w>', { desc = "Switch windows" })
 

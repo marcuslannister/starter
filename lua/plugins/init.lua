@@ -16,15 +16,17 @@ return {
   --   end,
   -- },
   --
-  -- {
-  -- 	"williamboman/mason.nvim",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"lua-language-server", "stylua",
-  -- 			"html-lsp", "css-lsp" , "prettier"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"williamboman/mason.nvim",
+  	opts = {
+  		ensure_installed = {
+  			"lua-language-server", "stylua",
+  			-- "html-lsp", "css-lsp" , "prettier",
+  			"prettier",
+  			"marksman"
+  		},
+  	},
+  },
   --
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

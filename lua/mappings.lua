@@ -30,3 +30,7 @@ map('n', '<leader>ww', '<C-w><C-w>', { desc = "Switch windows" })
 
 -- Setting
 map('n', '<leader>em', ':e $HOME/.config/nvim/lua/mappings.lua<CR>')
+
+-- Exit terminal mode
+map("t", "<ESC>", '<C-\\><C-n>')
+
